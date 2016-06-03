@@ -1,0 +1,88 @@
+/*翻页样式*/
+.page{
+    margin:100px auto 0;
+
+    font-size: 12px;
+	font-family: '微软雅黑';
+    color: #2d2d2d;
+    text-align: center;
+}
+.page a,.page span.current{
+    box-sizing: border-box;
+    display: inline-block;
+
+    width: 30px;
+    line-height: 28px;
+    margin-left: 8px;
+
+    font-size: 12px;
+    font-family: '微软雅黑';
+    color: #2d2d2d;
+    text-align: center;
+    
+    border: 1px solid #e4e4e4;
+    border-radius: 2px;
+    background-color:#fff;
+    text-decoration:none;
+}
+
+.page span.current{
+    background-color: #fc0025;
+    border: 1px solid #fc0025;
+    color: #fff;
+}
+.page a:hover{
+    background-color:#ccc;
+}
+.page span.ellipsis{
+    margin-left: 8px;
+}
+
+.page .homePage,.page .lastPage{
+	width:38px;
+    display-:none;
+}
+.page .nextPage,.page .prevPage{
+     width:52px;
+}
+.page span.disabled{
+    display:none;
+}
+
+.page .pageTxt,.page .pageSet{
+    display:inline;
+}
+.page .pageTxt span{
+    padding:0 4px;
+}
+.page .pageSet span {
+	margin-left:8px;
+}
+.page .pageSet input {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 30px;
+    line-height: 28px;
+    margin-left: 8px;
+    padding:0;
+
+    text-align: center;
+    background-color: #fff;
+    border:1px solid #e4e4e4;
+    border-radius: 2px;
+}
+.page .pageSet input:focus{
+    border-color: #66afe9;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+}
+.page .pageSet a{
+	width:38px;
+}
+.page .pageSet a:focus{
+   outline: 5px auto -webkit-focus-ring-color;
+   outline-offset: -2px;
+   box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+   -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+}
